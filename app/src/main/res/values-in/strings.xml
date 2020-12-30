@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settting">设置_in</string>
+    <string name="jump">跳转_in</string>
+    <string name="test">测试_in</string>
+    <string name="settting_en">英语_in</string>
+    <string name="settting_in">印尼语_in</string>
+
+
+</resources>
