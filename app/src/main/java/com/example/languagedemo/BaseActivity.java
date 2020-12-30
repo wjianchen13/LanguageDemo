@@ -17,8 +17,21 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MultiLanguage.setLocal(this);
     }
-    
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        MultiLanguage.setLocal(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MultiLanguage.setLocal(this);
+    }
+
     public Context getContext() {
         return this;
     }

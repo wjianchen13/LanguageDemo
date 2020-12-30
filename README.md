@@ -48,6 +48,25 @@ getApplicationContext().getResource().getString()就会变成英文。
 描述这个问题的文章：https://blog.csdn.net/xiaocheng0404/article/details/107564983  
 现在处理这个问题的办法是，在公共基类BaseActivity的onCreate，onStart和onResume方法里强制设置getApplicationContext()  
 为选择的系统语言。  
+```Java
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        MultiLanguage.setLocal(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        MultiLanguage.setLocal(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MultiLanguage.setLocal(this);
+    }
+```
 
 # Fragment中的问题  
 https://blog.csdn.net/k393393/article/details/78711973  
