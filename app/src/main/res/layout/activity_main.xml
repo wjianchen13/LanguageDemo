@@ -16,12 +16,21 @@
         app:layout_constraintTop_toTopOf="parent" />
     
     <Button
+        android:id="@+id/btn_jump"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/jump"
         android:textAllCaps="false"
         android:onClick="onJump"
         app:layout_constraintTop_toBottomOf="@id/btn_setting" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/system"
+        android:textAllCaps="false"
+        android:onClick="onSystem"
+        app:layout_constraintTop_toBottomOf="@id/btn_jump" />
     
 
 </androidx.constraintlayout.widget.ConstraintLayout>

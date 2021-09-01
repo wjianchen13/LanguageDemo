@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.languagedemo.language.LocalManageUtil;
+
 public class MainActivity extends BaseActivity {
 
     @Override
@@ -18,5 +20,10 @@ public class MainActivity extends BaseActivity {
     
     public void onJump(View v) {
         startActivity(new Intent(this, TestActivity.class));
+    }
+
+    public void onSystem(View v) {
+        int system = LocalManageUtil.getSystemSelectLanguage(this);
+        System.out.println("=====================> system: " + system);
     }
 }

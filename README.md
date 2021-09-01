@@ -67,6 +67,8 @@ getApplicationContext().getResource().getString()就会变成英文。
         MultiLanguage.setLocal(this);
     }
 ```
+Activity也有可能需要在onConfigurationChanged()处理语言切换，不过现在都是切换了重启所有Activity，所以暂时没有处理
+onConfigurationChanged
 
 # Fragment中的问题  
 https://blog.csdn.net/k393393/article/details/78711973  
@@ -74,4 +76,11 @@ https://blog.csdn.net/k393393/article/details/78711973
 # AndroidX的问题  
 https://blog.csdn.net/u012527560/article/details/108816692  
 https://www.it610.com/article/1296455207361781760.htm  
+
+# 参考资料
+新添加泰语
+https://www.jb51.net/article/38537.htm
+https://blog.csdn.net/qq_31097291/article/details/76546368
+
+
 

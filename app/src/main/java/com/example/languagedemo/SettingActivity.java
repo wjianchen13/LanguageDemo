@@ -17,6 +17,11 @@ public class SettingActivity extends BaseActivity {
      * 印尼语
      */
     public static final int INDONESIAN = 2;
+
+    /**
+     * 泰语
+     */
+    public static final int THAI = 3;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +37,10 @@ public class SettingActivity extends BaseActivity {
         selectLanguage(INDONESIAN);
     }
 
+    public void onTh(View v) {
+        selectLanguage(THAI);
+    }
+    
     private void selectLanguage(int select) {
         LocalManageUtil.saveSelectLanguage(this, select);
         Intent i = getBaseContext().getPackageManager()

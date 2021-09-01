@@ -36,6 +36,11 @@ public class LocalManageUtil {
     public static final String LANGUAGE_IN = "in_ID";
 
     /**
+     * 印尼语言 en_US
+     */
+    public static final String LANGUAGE_TH = "th_US";
+
+    /**
      * 默认语言 en_US
      */
     private static final String LANGUAGE_DEFAULT = LANGUAGE_EN;
@@ -54,6 +59,11 @@ public class LocalManageUtil {
      * 印尼语
      */
     public static final int INDONESIAN = 2;
+
+    /**
+     * 泰语
+     */
+    public static final int THAI = 3;
 
     @IntDef({DEFAULT, ENGLISH, INDONESIAN})
     @Retention(RetentionPolicy.SOURCE)
@@ -88,6 +98,9 @@ public class LocalManageUtil {
             case INDONESIAN:
                 currentSelectLanguage = LANGUAGE_IN;
                 break;
+            case THAI:
+                currentSelectLanguage = LANGUAGE_TH;
+                break;
             default:
                 currentSelectLanguage = getSystemLanguage(context);
                 break;
@@ -115,6 +128,8 @@ public class LocalManageUtil {
                 return getSystemLocale(context);
             case INDONESIAN:
                 return new Locale("in");
+            case THAI:
+                return new Locale("th");
             default:
                 return Locale.ENGLISH;
         }
@@ -129,7 +144,7 @@ public class LocalManageUtil {
         Locale locale = MultiLanguage.getSystemLocal(context);
         if(locale != null) {
             String language = locale.getLanguage() + "_" + getLocaleCountry(locale.getLanguage());
-            return !LANGUAGE_EN.equals(language) && !LANGUAGE_IN.equals(language) ? LANGUAGE_EN : language;
+            return !LANGUAGE_EN.equals(language) && !LANGUAGE_IN.equals(language) && !LANGUAGE_TH.equals(language)? LANGUAGE_EN : language;
         } else {
             return LANGUAGE_EN;
         }
@@ -225,8 +240,8 @@ public class LocalManageUtil {
      * @param context
      * @return
      */
-    private static int getSystemSelectLanguage(Context context) {
-        return LANGUAGE_IN.equals(getSystemLanguage(context)) ? INDONESIAN : ENGLISH;
+    public static int getSystemSelectLanguage(Context context) {
+        return LANGUAGE_IN.equals(getSystemLanguage(context)) ? INDONESIAN : LANGUAGE_TH.equals(getSystemLanguage(context)) ? THAI : ENGLISH;
     }
     
     public static void log11(String  str) {

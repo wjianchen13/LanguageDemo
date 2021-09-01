@@ -4,8 +4,10 @@
     <string name="settting">设置_in</string>
     <string name="jump">跳转_in</string>
     <string name="test">测试_in</string>
+    <string name="system">获取系统语言_in</string>
+    
     <string name="settting_en">英语_in</string>
     <string name="settting_in">印尼语_in</string>
-
+    <string name="settting_th">泰语_in</string>
 
 </resources>

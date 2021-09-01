@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settting">设置_th</string>
+    <string name="jump">跳转_th</string>
+    <string name="test">测试_th</string>
+    <string name="system">获取系统语言_th</string>
+    
+    <string name="settting_en">英语_th</string>
+    <string name="settting_in">印尼语_th</string>
+    <string name="settting_th">泰语_th</string>
+
+</resources>
