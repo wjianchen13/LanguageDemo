@@ -91,20 +91,7 @@ public class LocalManageUtil {
         if(context == null) {
             currentSelectLanguage = getDefaultLanguage();
         }
-        switch (SPUtil.getInstance(context).getSelectLanguage()) {
-            case ENGLISH:
-                currentSelectLanguage = LANGUAGE_EN;
-                break;
-            case INDONESIAN:
-                currentSelectLanguage = LANGUAGE_IN;
-                break;
-            case THAI:
-                currentSelectLanguage = LANGUAGE_TH;
-                break;
-            default:
-                currentSelectLanguage = getSystemLanguage(context);
-                break;
-        }
+        currentSelectLanguage = getLanguage(context, SPUtil.getInstance(context).getSelectLanguage());
         return currentSelectLanguage;
     }
 
@@ -220,11 +207,7 @@ public class LocalManageUtil {
      */
     public static int getSelectLanguageType(Context context) {
         String language = getSelectLanguage(context);
-        int type = ENGLISH;
-        if(LANGUAGE_IN.equals(language)) {
-            type = INDONESIAN;
-        }
-        return type;
+        return getLanguageType(language);
     }
 
     /**
@@ -234,15 +217,26 @@ public class LocalManageUtil {
      */
     public static void saveSelectLanguage(Context context, int select) {
         SPUtil.getInstance(context).saveLanguage(select);
-        currentSelectLanguage = LANGUAGE_EN;
-        if(INDONESIAN == select) {
-            currentSelectLanguage = LANGUAGE_IN;
-        } else if(THAI == select) {
-            currentSelectLanguage = LANGUAGE_TH;
-        } else if(ENGLISH == select) {
-            currentSelectLanguage = LANGUAGE_EN;
-        }
+        currentSelectLanguage = getLanguage(context, select);
         MultiLanguage.setApplicationLanguage(context);
+    }
+
+    /**
+     * 获取语言
+     * @return
+     */
+    private static String getLanguage(Context context, int type) {
+        String language = getDefaultLanguage();
+        if(type == ENGLISH) {
+            language = LANGUAGE_EN;
+        } else if(type == INDONESIAN) {
+            language = LANGUAGE_IN;
+        } else if(type == THAI) {
+            language = LANGUAGE_TH;
+        } else if(type == DEFAULT){
+            language = getSystemLanguage(context);
+        }
+        return language;
     }
 
     /**
@@ -251,13 +245,22 @@ public class LocalManageUtil {
      * @return
      */
     public static int getSystemSelectLanguage(Context context) {
+        String systemLanguage = getSystemLanguage(context);
+        return getLanguageType(systemLanguage);
+    }
+
+    /**
+     * 获取语言类型
+     * @return
+     */
+    private static int getLanguageType(String language) {
         int select = ENGLISH;
-        if(LANGUAGE_IN.equals(getSystemLanguage(context))) {
+        if(LANGUAGE_IN.equals(language)) {
             select = INDONESIAN;
-        } else if(LANGUAGE_TH.equals(getSystemLanguage(context))) {
+        } else if(LANGUAGE_TH.equals(language)) {
             select = THAI;
-        } else if(LANGUAGE_EN.equals(getSystemLanguage(context))){
-            select = ENGLISH; 
+        } else if(LANGUAGE_EN.equals(language)){
+            select = ENGLISH;
         }
         return select;
     }
