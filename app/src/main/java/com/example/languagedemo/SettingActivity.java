@@ -7,21 +7,6 @@ import android.view.View;
 import com.example.languagedemo.language.LocalManageUtil;
 
 public class SettingActivity extends BaseActivity {
-
-    /**
-     * 英语
-     */
-    public static final int ENGLISH = 1;
-
-    /**
-     * 印尼语
-     */
-    public static final int INDONESIAN = 2;
-
-    /**
-     * 泰语
-     */
-    public static final int THAI = 3;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +15,15 @@ public class SettingActivity extends BaseActivity {
     }
 
     public void onEn(View v) {
-        selectLanguage(ENGLISH);
+        selectLanguage(LocalManageUtil.ENGLISH);
     }
 
     public void onIn(View v) {
-        selectLanguage(INDONESIAN);
+        selectLanguage(LocalManageUtil.INDONESIAN);
     }
 
     public void onTh(View v) {
-        selectLanguage(THAI);
+        selectLanguage(LocalManageUtil.THAI);
     }
     
     private void selectLanguage(int select) {
