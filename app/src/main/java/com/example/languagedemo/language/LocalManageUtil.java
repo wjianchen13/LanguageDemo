@@ -38,7 +38,7 @@ public class LocalManageUtil {
     /**
      * 印尼语言 en_US
      */
-    public static final String LANGUAGE_TH = "th_US";
+    public static final String LANGUAGE_TH = "th_TH";
 
     /**
      * 默认语言 en_US
@@ -130,6 +130,7 @@ public class LocalManageUtil {
     public static String getSystemLanguage(Context context) {
         Locale locale = MultiLanguage.getSystemLocal(context);
         if(locale != null) {
+            // 这个方法可以转换locale.toLanguageTag()
             String language = locale.getLanguage() + "_" + getLocaleCountry(locale.getLanguage());
             return !LANGUAGE_EN.equals(language) 
                     && !LANGUAGE_IN.equals(language) 
@@ -152,6 +153,8 @@ public class LocalManageUtil {
         String country = "US";
         if("in".equals(language)) { // 印尼语
             country = "ID";
+        } else if("th".equals(language)) {
+            country = "TH";
         }
         return country;
     }
