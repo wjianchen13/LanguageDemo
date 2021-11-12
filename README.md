@@ -70,6 +70,10 @@ getApplicationContext().getResource().getString()就会变成英文。
 Activity也有可能需要在onConfigurationChanged()处理语言切换，不过现在都是切换了重启所有Activity，所以暂时没有处理
 onConfigurationChanged
 
+接入之后泰语只有一直没有效果
+看了一下是因为这个配置排除掉了
+        resConfigs "en", "in", "th"
+
 # Fragment中的问题  
 https://blog.csdn.net/k393393/article/details/78711973  
 
@@ -81,6 +85,13 @@ https://www.it610.com/article/1296455207361781760.htm
 新添加泰语
 https://www.jb51.net/article/38537.htm
 https://blog.csdn.net/qq_31097291/article/details/76546368
+
+新加葡萄牙语
+https://blog.csdn.net/qq_36376387/article/details/73069347
+Locale里面有几个常量，对应几个常见国家，如果你要切换的语言这几个常量里没有的话，就自己new一个Locale对象就好啦,
+构造方法里传入对应语言的代码字符串就好（就是values文件夹-后面的）。配置完该信息后需要退出activity，下次进入才
+能看到效果，所以我这里用广播的方式关闭了所有的activity，再重新开启MainActivity回到主页！不管你用什么方法，能实现就好。
+
 
 
 

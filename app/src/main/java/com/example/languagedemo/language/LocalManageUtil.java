@@ -41,6 +41,11 @@ public class LocalManageUtil {
     public static final String LANGUAGE_TH = "th_TH";
 
     /**
+     * 葡萄牙语 pt_PT
+     */
+    public static final String LANGUAGE_PT = "pt_PT";
+
+    /**
      * 默认语言 en_US
      */
     private static final String LANGUAGE_DEFAULT = LANGUAGE_EN;
@@ -64,6 +69,11 @@ public class LocalManageUtil {
      * 泰语
      */
     public static final int THAI = 3;
+
+    /**
+     * 泰语
+     */
+    public static final int PT = 4;
 
     @IntDef({DEFAULT, ENGLISH, INDONESIAN})
     @Retention(RetentionPolicy.SOURCE)
@@ -117,6 +127,8 @@ public class LocalManageUtil {
                 return new Locale("in");
             case THAI:
                 return new Locale("th");
+            case PT:
+                return new Locale("pt");
             default:
                 return Locale.ENGLISH;
         }
@@ -236,6 +248,8 @@ public class LocalManageUtil {
             language = LANGUAGE_IN;
         } else if(type == THAI) {
             language = LANGUAGE_TH;
+        } else if(type == PT) {
+            language = LANGUAGE_PT;
         } else if(type == DEFAULT){
             language = getSystemLanguage(context);
         }
@@ -262,7 +276,9 @@ public class LocalManageUtil {
             select = INDONESIAN;
         } else if(LANGUAGE_TH.equals(language)) {
             select = THAI;
-        } else if(LANGUAGE_EN.equals(language)){
+        } else if(LANGUAGE_PT.equals(language)) {
+            select = PT;
+        }  else if(LANGUAGE_EN.equals(language)){
             select = ENGLISH;
         }
         return select;

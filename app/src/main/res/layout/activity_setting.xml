@@ -39,4 +39,15 @@
         android:onClick="onTh"
         app:layout_constraintTop_toBottomOf="@id/btn_test2" />
 
+    <Button
+        android:id="@+id/btn_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="@string/settting_pt"
+        android:layout_marginTop="10dp"
+        android:onClick="onPt"
+        app:layout_constraintTop_toBottomOf="@id/btn_test3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

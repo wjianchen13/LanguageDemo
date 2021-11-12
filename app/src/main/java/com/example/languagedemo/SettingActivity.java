@@ -26,6 +26,10 @@ public class SettingActivity extends BaseActivity {
         selectLanguage(LocalManageUtil.THAI);
     }
     
+    public void onPt(View v) {
+        selectLanguage(LocalManageUtil.PT);
+    }
+    
     private void selectLanguage(int select) {
         LocalManageUtil.saveSelectLanguage(this, select);
         Intent i = getBaseContext().getPackageManager()
