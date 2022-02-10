@@ -50,5 +50,8 @@ public class TestActivity extends BaseActivity {
         LocalManageUtil.log11("TestActivity onCreate test3: " + getResources().getString(R.string.test));
         LocalManageUtil.log11("TestActivity onCreate test4: " + MyApp.app().getResources().getString(R.string.test));
         LocalManageUtil.log11("TestActivity onCreate test5: " + getContext().getResources().getString(R.string.test));
+        
+        
+
     }
 }
