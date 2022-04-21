@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settting">设置_tw</string>
+    <string name="jump">跳转_tw</string>
+    <string name="test">测试_tw</string>
+    <string name="system">获取系统语言_tw</string>
+    
+    <string name="settting_en">英语_tw</string>
+    <string name="settting_in">印尼语_tw</string>
+    <string name="settting_th">泰语_tw</string>
+    <string name="settting_pt">葡萄牙_tw</string>
+    <string name="settting_tw">繁体_tw</string>
+    
+</resources>

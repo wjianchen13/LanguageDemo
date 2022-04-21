@@ -74,6 +74,11 @@ onConfigurationChanged
 看了一下是因为这个配置排除掉了
         resConfigs "en", "in", "th"
 
+# 接入到95最开始不显示繁体
+95原来是resConfigs "zh"
+改为
+resConfigs "zh-rTW"
+
 # Fragment中的问题  
 https://blog.csdn.net/k393393/article/details/78711973  
 

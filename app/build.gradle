@@ -11,7 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
         
-//        resConfigs "en", "in", "th"
+//        resConfigs "en", "in", "th", "zh-rTW"
         
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

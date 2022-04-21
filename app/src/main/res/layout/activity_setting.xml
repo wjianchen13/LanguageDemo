@@ -50,4 +50,15 @@
         android:onClick="onPt"
         app:layout_constraintTop_toBottomOf="@id/btn_test3" />
 
+    <Button
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="@string/settting_tw"
+        android:layout_marginTop="10dp"
+        android:onClick="onTw"
+        app:layout_constraintTop_toBottomOf="@id/btn_test4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
