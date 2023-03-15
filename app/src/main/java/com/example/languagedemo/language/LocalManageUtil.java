@@ -51,6 +51,11 @@ public class LocalManageUtil {
     public static final String LANGUAGE_TW = "ch_TW";
 
     /**
+     * 繁体 ch_TW
+     */
+    public static final String LANGUAGE_AR = "ar_AR";
+
+    /**
      * 默认语言 en_US
      */
     private static final String LANGUAGE_DEFAULT = LANGUAGE_EN;
@@ -84,6 +89,11 @@ public class LocalManageUtil {
      * 繁体
      */
     public static final int TW = 5;
+
+    /**
+     * 阿拉伯
+     */
+    public static final int AR = 6;
 
     @IntDef({DEFAULT, ENGLISH, INDONESIAN})
     @Retention(RetentionPolicy.SOURCE)
@@ -141,6 +151,8 @@ public class LocalManageUtil {
                 return new Locale("pt");
             case TW:
                 return Locale.TRADITIONAL_CHINESE;
+            case AR:
+                return new Locale("ar");
             default:
                 return Locale.ENGLISH;
         }
@@ -264,6 +276,8 @@ public class LocalManageUtil {
             language = LANGUAGE_PT;
         } else if(type == TW) {
             language = LANGUAGE_TW;
+        } else if(type == AR) {
+            language = LANGUAGE_AR;
         } else if(type == DEFAULT){
             language = getSystemLanguage(context);
         }
@@ -294,6 +308,8 @@ public class LocalManageUtil {
             select = PT;
         } else if(LANGUAGE_TW.equals(language)) {
             select = TW;
+        } else if(LANGUAGE_AR.equals(language)) {
+            select = AR;
         } else if(LANGUAGE_EN.equals(language)){
             select = ENGLISH;
         }

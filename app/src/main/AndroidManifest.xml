@@ -19,6 +19,10 @@
         </activity>
         <activity android:name=".TestActivity" />
         <activity android:name=".SettingActivity" />
+        <activity android:name=".ar.BaseArActivity" />
+
+
     </application>
 
 </manifest>
+

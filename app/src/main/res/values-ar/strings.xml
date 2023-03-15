@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settting">设置_ar</string>
+    <string name="jump">跳转_ar</string>
+    <string name="test">测试_ar</string>
+    <string name="system">获取系统语言_ar</string>
+    <string name="ar">阿拉伯语测试_ar</string>
+
+    <string name="settting_en">英语_ar</string>
+    <string name="settting_in">印尼语_ar</string>
+    <string name="settting_th">泰语_ar</string>
+    <string name="settting_pt">葡萄牙_ar</string>
+    <string name="settting_tw">繁体_ar</string>
+    <string name="settting_ar">阿拉伯_ar</string>
+
+    <string name="ar_test1">测试阿拉伯1_ar</string>
+
+</resources>

@@ -87,6 +87,9 @@ https://blog.csdn.net/u012527560/article/details/108816692
 https://www.it610.com/article/1296455207361781760.htm  
 
 # 参考资料
+Android 8.0 App内切换语言不生效的问题记录
+https://blog.csdn.net/a1018875550/article/details/79845949
+
 新添加泰语
 https://www.jb51.net/article/38537.htm
 https://blog.csdn.net/qq_31097291/article/details/76546368
@@ -117,7 +120,7 @@ Locale里面有几个常量，对应几个常见国家，如果你要切换的�
 
 
 
-翻译注意事项
+# 翻译注意事项
 1.翻译标签<string>xxx</string>里面的xxx内容，后面的 <!-- --> 是参考中文，不要改动
 例如 <string name="dino_common_charge">Top-Up</string> <!-- 充值 -->
 翻译内容是Top-Up，翻译完成直接替换原来的内容

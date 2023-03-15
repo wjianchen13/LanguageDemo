@@ -5,11 +5,16 @@
     <string name="jump">跳转_en</string>
     <string name="test">测试_en</string>
     <string name="system">获取系统语言_en</string>
+    <string name="ar">阿拉伯语测试_en</string>
 
     <string name="settting_en">英语_en</string>
     <string name="settting_in">印尼语_en</string>
     <string name="settting_th">泰语_en</string>
     <string name="settting_pt">葡萄牙_en</string>
     <string name="settting_tw">繁体_en</string>
+    <string name="settting_ar">阿拉伯_en</string>
+
+    <string name="ar_test1">测试阿拉伯1_en</string>
+
     
 </resources>

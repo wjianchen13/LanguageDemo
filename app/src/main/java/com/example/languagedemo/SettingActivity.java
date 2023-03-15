@@ -33,6 +33,10 @@ public class SettingActivity extends BaseActivity {
     public void onTw(View v) {
         selectLanguage(LocalManageUtil.TW);
     }
+
+    public void onAr(View v) {
+        selectLanguage(LocalManageUtil.AR);
+    }
     
     private void selectLanguage(int select) {
         LocalManageUtil.saveSelectLanguage(this, select);

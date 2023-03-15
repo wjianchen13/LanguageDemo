@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.languagedemo.ar.BaseArActivity;
 import com.example.languagedemo.language.LocalManageUtil;
 
 public class MainActivity extends BaseActivity {
@@ -26,4 +27,9 @@ public class MainActivity extends BaseActivity {
         int system = LocalManageUtil.getSystemSelectLanguage(this);
         System.out.println("=====================> system: " + system);
     }
+
+    public void onAr(View v) {
+        startActivity(new Intent(this, BaseArActivity.class));
+    }
+
 }
