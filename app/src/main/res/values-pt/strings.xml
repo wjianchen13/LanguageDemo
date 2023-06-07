@@ -15,5 +15,6 @@
     <string name="settting_ar">阿拉伯_pt</string>
 
     <string name="ar_test1">测试阿拉伯1_pt</string>
+    <string name="setting_ar_textview">测试TextView_pt</string>
 
 </resources>

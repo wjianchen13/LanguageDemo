@@ -16,5 +16,11 @@
 
     <string name="ar_test1">测试阿拉伯1_en</string>
 
-    
+    <string name="setting_ar_textview">测试TextView_en</string>
+
+    <string name="setting_test" tools:ignore="MissingTranslation">测试</string>
+    <string name="setting_test1" tools:ignore="MissingTranslation">替换后尽量每个页面看看效果，有时候需要一些微调工作，例如使用了标签，其中用到的方向属性不会</string>
+    <string name="setting_support_rtl" tools:ignore="MissingTranslation">判断是否是RTL</string>
+    <string name="setting_ar_relativelayout" tools:ignore="MissingTranslation">测试RelativeLayout_en</string>
+
 </resources>

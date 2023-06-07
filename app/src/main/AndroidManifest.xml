@@ -20,7 +20,8 @@
         <activity android:name=".TestActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".ar.BaseArActivity" />
-
+        <activity android:name=".ar.TextViewArActivity" />
+        <activity android:name=".ar.RelativeLayoutArActivity" />
 
     </application>
 
