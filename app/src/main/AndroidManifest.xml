@@ -23,6 +23,8 @@
         <activity android:name=".ar.TextViewArActivity" />
         <activity android:name=".ar.RelativeLayoutArActivity" />
         <activity android:name=".ar.ImageArActivity" />
+        <activity android:name=".bidi.BidiActivity" />
+        <activity android:name=".bidi.BidiTestActivity" />
 
     </application>
 

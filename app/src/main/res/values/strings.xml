@@ -23,5 +23,8 @@
     <string name="setting_support_rtl" tools:ignore="MissingTranslation">判断是否是RTL</string>
     <string name="setting_ar_relativelayout" tools:ignore="MissingTranslation">测试RelativeLayout_ar</string>
     <string name="setting_ar_image" tools:ignore="MissingTranslation">测试图标_ar</string>
+    <string name="main_bidi" tools:ignore="MissingTranslation">BidiFormatter</string>
+    <string name="main_bidi_test" tools:ignore="MissingTranslation">BidiFormatter 测试</string>
+    <string name="main_bidi_base_test" tools:ignore="MissingTranslation">BidiFormatter 基础测试</string>
 
 </resources>

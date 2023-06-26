@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.languagedemo.ar.BaseArActivity;
+import com.example.languagedemo.bidi.BidiActivity;
 import com.example.languagedemo.language.LocalManageUtil;
 
 public class MainActivity extends BaseActivity {
@@ -30,6 +31,10 @@ public class MainActivity extends BaseActivity {
 
     public void onAr(View v) {
         startActivity(new Intent(this, BaseArActivity.class));
+    }
+
+    public void onBidi(View v) {
+        startActivity(new Intent(this, BidiActivity.class));
     }
 
 }

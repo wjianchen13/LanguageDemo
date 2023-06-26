@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ar_test1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="测试 1"
+        android:layout_marginTop="5dp"
+        android:onClick="onTest1"
+        app:layout_constraintTop_toBottomOf="@id/tv_test1" />
+
+    <TextView
+        android:id="@+id/tv_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ar_test1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="测试 2"
+        android:layout_marginTop="5dp"
+        android:onClick="onTest2"
+        app:layout_constraintTop_toBottomOf="@id/btn_test1" />
+
+    <TextView
+        android:id="@+id/tv_test3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ar_test1"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_test3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="测试 3"
+        android:layout_marginTop="5dp"
+        android:onClick="onTest3"
+        app:layout_constraintTop_toBottomOf="@id/btn_test2" />
+
+    <TextView
+        android:id="@+id/tv_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ar_test1"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="测试 4"
+        android:layout_marginTop="5dp"
+        android:onClick="onTest4"
+        app:layout_constraintTop_toBottomOf="@id/btn_test3" />
+
+    <TextView
+        android:id="@+id/tv_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ar_test1"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <Button
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="测试 5"
+        android:onClick="onTest5"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_test4" />
+
+    <TextView
+        android:id="@+id/tv_test6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ar_test1"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_test6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="测试 6"
+        android:onClick="onTest6"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_test4" />
+
+</LinearLayout>

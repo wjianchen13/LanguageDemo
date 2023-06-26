@@ -40,6 +40,13 @@
         android:textAllCaps="false"
         android:onClick="onAr"
         app:layout_constraintTop_toBottomOf="@id/btn_system" />
-    
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_bidi"
+        android:textAllCaps="false"
+        android:onClick="onBidi"
+        app:layout_constraintTop_toBottomOf="@id/btn_system" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
