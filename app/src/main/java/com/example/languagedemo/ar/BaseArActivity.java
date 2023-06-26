@@ -55,6 +55,14 @@ public class BaseArActivity extends BaseActivity {
         startActivity(new Intent(this, RelativeLayoutArActivity.class));
     }
 
+    /**
+     * 阿语图标测试
+     * @param v
+     */
+    public void onTest4(View v) {
+        startActivity(new Intent(this, ImageArActivity.class));
+    }
+
 
 
 }

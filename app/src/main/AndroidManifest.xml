@@ -22,6 +22,7 @@
         <activity android:name=".ar.BaseArActivity" />
         <activity android:name=".ar.TextViewArActivity" />
         <activity android:name=".ar.RelativeLayoutArActivity" />
+        <activity android:name=".ar.ImageArActivity" />
 
     </application>
 

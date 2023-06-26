@@ -57,8 +57,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textAllCaps="false"
-        android:text="@string/settting_tw"
+        android:text="@string/setting_ar_image"
         android:layout_marginTop="10dp"
+        android:onClick="onTest4"
         app:layout_constraintTop_toBottomOf="@id/btn_test3" />
 
     <Button
